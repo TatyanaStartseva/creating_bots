@@ -46,7 +46,7 @@ def add_folders_to_pm2(added_folders, directory):
             for folder in added_folders:
                 if folder not in output_str:
                     folder_full_path = os.path.join(directory, folder)
-                    pm2_command = f"pm2 start python --name {folder} --watch -- -m bot"
+                    pm2_command = f"pm2 start python3 --name {folder} --watch -- -m bot"
                     time.sleep(30)
                     subprocess.run(
                         pm2_command, shell=True, cwd=folder_full_path, encoding="utf-8"
