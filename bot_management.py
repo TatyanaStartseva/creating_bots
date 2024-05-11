@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from aiohttp import web
-from pm2_bots_manager import stop_processing, directory_path
+from pm2_bots_manager import stop_processing
 import os
 import requests
 import git
